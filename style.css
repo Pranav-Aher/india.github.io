@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Cookie&family=Corinthia:wght@700&family=Montserrat&family=Poppins&family=Prompt&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('images/bg.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    color: white;
+    font-family: 'Amiri';
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.feature{
+    display: grid;
+    width: 25%;
+    height: 100vh;
+    place-items: center;
+    overflow: hidden;
+    position: relative;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 1s;
+}
+.feature_img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 1s;
+}
+.feature .content h3{
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 0;
+    margin-bottom: 20px;
+    /* background: linear-gradient( to right, #ff6600, #ffffff, rgb(7, 7, 255), rgb(255, 255, 255), #33ff00); */
+    background: linear-gradient( to right, #ff6600, #ffffff, #33ff00);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition: all 1s;
+}
+.feature .content{
+    margin: 0 auto;
+    transform: scale(1);
+    transform-origin: center 0%;
+    transition: transform .5s;
+}
+.feature .content a{
+    background: linear-gradient( to bottom, #ff6600, #ffffff, #33ff00);
+    text-decoration: none;
+    color: rgb(34, 34, 230);
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 8px 50px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 1s;
+    font-family: 'Times New Roman', Times, serif;
+}
