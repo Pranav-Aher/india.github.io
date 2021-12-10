@@ -1,1 +1,1 @@
-# india.github.io
+Static website using HTML, CSS and Javascript.
